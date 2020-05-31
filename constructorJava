@@ -1,0 +1,41 @@
+public class constructorJava {
+
+	private String name;
+	private int id;
+
+	// no-args constructor
+	public constructorJava() {
+		System.out.println("No-Args Constructor");
+	}
+
+	// constructor with one parameter
+	public constructorJava(String n) {
+		this.name = n;
+	}
+
+	// constructor with two parameter
+	public constructorJava(String n, int i) {
+		this.name = n;
+		this.id = i;
+	}
+
+	@Override
+	public String toString() {
+		return "ID=" + id + ", Name=" + name;
+	}
+
+	public static void main(String[] args) {
+
+		// Create object
+		constructorJava cJ = new constructorJava();
+		System.out.println(cJ);
+
+		cJ = new constructorJava("anis");
+		System.out.println(cJ);
+
+		cJ = new constructorJava("anis", 16);
+		System.out.println(cJ);
+
+	}
+
+}
