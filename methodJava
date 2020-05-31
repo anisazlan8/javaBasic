@@ -1,0 +1,54 @@
+public class methodJava {
+
+	// main method
+	public static void main(String[] args) {
+
+		// calling method using object
+
+		Python py = new Python();
+		py.myMethod();
+
+		// calling calculateAnswer method
+		double result, wingSpan, length;
+
+		wingSpan = 1;
+		length = 2;
+
+		result = calculateAnswer(wingSpan, length);
+
+		System.out.println(result);
+
+		// Calling MyFunction method
+
+		MyFunction();
+
+	}
+
+	public static double calculateAnswer(double wingSpan, double length) {
+
+		// do the calculation here
+
+		double result;
+
+		result = wingSpan + length;
+
+		return result;
+	}
+
+	public static void MyFunction() {
+
+		// function body
+		System.out.println("Hello, this is myFunction method");
+
+	}
+}
+
+class Python {
+
+	public void myMethod() {
+
+		System.out.println("This is method from Phyton's class");
+
+	}
+
+}
